@@ -1,14 +1,16 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
-    
-fetch('http://127.0.0.1:3000/tasks')
-.then(function(response){
-    return response.json();
-})
-.then(function(datas){
-    let placeholder = document.querySelector("#data-output");
-    let out = "";
-    for(let data of datas){
-        out += `
+
+    fetch('http://127.0.0.1:3000/tasks')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (datas) {
+            let placeholder = document.querySelector("#data-output");
+            let out = "";
+            for (let data of datas) {
+                out += `
             <tr>
                 <td>${data.id}</td>
                 <td>${data.title}</td>
@@ -16,8 +18,8 @@ fetch('http://127.0.0.1:3000/tasks')
             </tr>
 
         `;
-    }
+            }
 
-    placeholder.innerHTML = out;    
-})
+            placeholder.innerHTML = out;
+        })
 })
