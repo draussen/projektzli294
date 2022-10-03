@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete task</title>
+    <link rel="stylesheet" href="deleteTask.css">
+    <script src="deleteTask.js"></script>
+</head>
+
+<body>
+    <div>
+        <form id="deleteTaskForm">
+            <h1>Delete task</h1>
+            <label for="deleteTaskInput">Task id:</label>
+            <input type="number" name="deleteTask" id="deleteTaskInput" min="1" />
+            <input type="image" src="../images/minus.png" title="Delete task" id="deleteImage"></input>
+        </form>
+    </div>
+    <div>
+        <p id="message"></p>
+    </div>
+    <div>
+        <a href="../showTasksAuth/showTasks.html" target="_blank">
+            <button>Show tasks</button>
+        </a>
+
+        <a href="../createTasksAuth/createTask.html" target="_blank">
+            <button>Create tasks</button>
+        </a>
+
+        <a href="../editTaskAuth/editTask.html" target="_blank">
+            <button>Edit tasks</button>
+        </a>
+
+    </div>
+
+    <div>
+        <a href="../logoutAuth/logout.html">
+            <button style="background-color: brown; color: white;">Logout</button>
+        </a>
+    </div>
+
+</body>
+</html>
