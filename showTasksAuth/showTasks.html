@@ -5,33 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your tasks</title>
     <link rel="stylesheet" href="showTasks.css">
-    <script src="showTask.js"></script>
+    <script src="showTasks.js"></script>
 </head>
 
 <body>
+    <div>
+        <h1>Your tasks</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody id="data-output">
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Completed</th>
-            </tr>
-        </thead>
-        <tbody id="data-output">
+            </tbody>
+        </table>
 
-        </tbody>
-    </table>
+        <a href="../createTasksAuth/createTask.html" target="_blank">
+            <button>Create tasks</button>
+        </a>
 
-    <a href="../createTasksAuth/createTasks.html">
-        <button>Create task</button>
-    </a>
+        <a href="../editTaskAuth/editTask.html" target="_blank">
+            <button>Edit tasks</button>
+        </a>
 
-    <a href="../editTaskAuth/editTasks.html">
-        <button>Edit task</button>
-    </a>
+        <a href="../deleteTasksAuth/deleteTask.html" target="_blank">
+            <button>Delete tasks</button>
+        </a>
+
+        <br>
+        <br>
+
+        <a href="../logoutAuth/logout.html">
+            <button style="background-color: brown; color: white;">Logout</button>
+        </a>
+
+    </div>
+
+
+
 </body>
 
 </html>
