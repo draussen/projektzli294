@@ -3,6 +3,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
+    if (localStorage.getItem("token") !== "undefined") {
+        window.location.href = "http://127.0.0.1:3001/showTasksAuth/showTasks.html"
+
+    }
+
+    const authenticateForm = document.getElementById("authenticateForm")
 
     authenticateForm.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -13,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function authenticate() {
-    const authenticateForm = document.getElementById("authenticateForm");
     const emailInput = document.getElementById("emailInput");
     const passwordInput = document.getElementById("passwordInput");
 
@@ -22,7 +27,7 @@ function authenticate() {
         password: passwordInput.value
     };
 
-    let response = fetch('http://127.0.0.1:3000/auth/jwt/sign', {
+        fetch('http://127.0.0.1:3000/auth/jwt/sign', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
@@ -30,8 +35,10 @@ function authenticate() {
         body: JSON.stringify(auth)
     }).then((response) => {
         if (response.status == 400){
-            console.log("drin", response);
-            document.getElementById("errorMessage").textContent = "wrong username or password";
+            document.getElementById("errorMessage").style.display = "block";
+            document.getElementById("errorMessage").style.color = "red";
+            document.getElementById("errorMessage").textContent = "Wrong email or password!";
+            setTimeout(hideElement, 3000);
         }
         else{
             return response.json();
@@ -43,4 +50,8 @@ function authenticate() {
     }
     );
 
+}
+
+function hideElement(){
+    document.getElementById("errorMessage").style.display = "none";
 }
