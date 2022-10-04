@@ -1,5 +1,64 @@
-label,
-input,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	min-height: 100vh;
+	color: #555;
+}
+
 button {
-    display: block;
+	margin: 5px auto;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	color: rgb(60, 66, 87);
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 4px 8px;
+	min-height: 28px;
+	text-decoration: none;
+}
+
+button:hover {
+	box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 3px 9px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+}
+
+
+div {
+	margin: 30px auto;
+	width: 1000px;
+	justify-content: center;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin-bottom: 5px;
+}
+
+form>* {
+	display: block;
+	margin-top: 5px;
+}
+
+input {
+	border: thin solid #d4d4d4;
+	font-size: 15px;
+}
+
+#createImage {
+	width: 30px;
+	height: 30px;
+	border: 0px;
+	margin-left: 37%;
 }
