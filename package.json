@@ -1,0 +1,22 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "Checken Sie, ob node installiert ist mit node-v.\r Falls Node nicht auf dem neuesten Stand oder aktualisiert ist tun Sie dies bitte machen.\r Öffnen Sie die Kommandozeile und navigieren Sie in den Ordner vom Backend.\r Installieren Sie das Backend mit \"npm install\".\r Starten Sie das Backend mit \"npm run start\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draussen/projektzli294.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/draussen/projektzli294/issues"
+  },
+  "homepage": "https://github.com/draussen/projektzli294#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  }
+}
