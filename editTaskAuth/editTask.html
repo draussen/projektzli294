@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit task</title>
+    <link rel="stylesheet" href="editTask.css">
+    <script src="editTask.js"></script>
+</head>
+
+<body>
+    <div>
+        <form id="editTaskForm">
+            <h1>Edit task</h1>
+            <label for="editTaskInput">Task id:</label>
+            <input type="number" name="taskID" id="taskID" min="1"/>
+            <label for="editTaskInput">Task title:</label>
+            <input type="text" name="taskTitle" id="taskTitle" />
+            <label for="editTaskInput">Task completed:</label>
+            <input type="checkbox" name="taskStatus" id="taskStatus" />
+            <br>
+            <input type="image" src="../images/pencil.png" title="Edit task" id="deleteImage"></input>
+
+        </form>
+    </div>
+    <div>
+        <p id="message"></p>
+    </div>
+    <div>
+
+        <a href="../showTasksAuth/showTasks.html" target="_blank">
+            <button>Show tasks</button>
+        </a>
+
+        <a href="../createTasksAuth/createTask.html" target="_blank">
+            <button>Create tasks</button>
+        </a>
+
+        <a href="../deleteTasksAuth/deleteTask.html" target="_blank">
+            <button>Delete tasks</button>
+        </a>
+
+    </div>
+
+    <div>
+        <a href="../logoutAuth/logout.html">
+            <button style="background-color: brown; color: white;">Logout</button>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
